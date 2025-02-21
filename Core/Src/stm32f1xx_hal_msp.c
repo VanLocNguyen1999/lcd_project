@@ -19,9 +19,9 @@
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
+//#include "main.h"
 /* USER CODE BEGIN Includes */
-
+#include "stm32_config.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

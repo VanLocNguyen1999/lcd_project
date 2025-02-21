@@ -51,5 +51,11 @@
 #define LCD_D7_Pin LL_GPIO_PIN_3
 #define LCD_D7_GPIO_Port GPIOB
 
-
+static inline void Error_Handler(void)
+{
+  __disable_irq();
+  while (1)
+  {
+  }
+}
 #endif /* CORE_EXTENSION_STM32_CONFIG_H_ */

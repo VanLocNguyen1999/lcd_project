@@ -26,10 +26,10 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
+//#include "main.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "stm32_config.h"
 /* USER CODE END Includes */
 
 extern ADC_HandleTypeDef hadc1;

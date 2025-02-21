@@ -18,5 +18,5 @@
 #include "lcd.h"
 
 void board_hardware_init_ex(void);
-void Error_Handler(void);
+
 #endif /* CORE_EXTENSION_BOARD_H_ */

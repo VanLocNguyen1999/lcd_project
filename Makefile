@@ -13,7 +13,7 @@
 ######################################
 # target
 ######################################
-TARGET = project_1
+TARGET = stm32_lcd_project
 
 
 ######################################
@@ -36,7 +36,6 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
-Core/Src/main.c \
 Core/Src/stm32f1xx_it.c \
 Core/Src/stm32f1xx_hal_msp.c \
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c \
@@ -71,6 +70,8 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_tim.c
 C_SOURCES +=  \
 Core/Extension/lcd.c \
 Core/Extension/board.c 
+C_SOURCES +=  \
+app/main.c \
 # ASM sources
 ASM_SOURCES =  \
 startup_stm32f103xb.s
@@ -136,8 +137,9 @@ C_INCLUDES =  \
 -IDrivers/CMSIS/Device/ST/STM32F1xx/Include \
 -IDrivers/CMSIS/Include
 C_INCLUDES +=  \
--ICore/Core/Extension
-
+-ICore/Extension 
+C_INCLUDES +=  \
+-Iapp
 # compile gcc flags
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
 
