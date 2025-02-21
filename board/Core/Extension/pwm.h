@@ -26,13 +26,12 @@
 #define PWM_DISABLE_OUTPUT				LL_TIM_DisableAllOutputs(PWM_TIMER)
 
 #define PWM_DUTY						PWM_TIMER->CCR1
-#define PWM_SET_DUTY(x)	do { \
-                        PWM_DUTY = x; \
-                      } while (1)
+#define PWM_SET_DUTY(x)	        		PWM_DUTY = (x)
 
-#define PWM_STARTUP		do { \
-                        PWM_TIMER->CNT = 0; \
-                      } while (1)
+#define PHASE_PWM_RESET 				PWM_TIMER->CNT = PWM_TIMER_TOP_COUNTER - 1;
+#define PWM_STARTUP						PWM_TIMER->CNT = 0;
+
+
 void pwm_init_ex(void);
 void pwm_set_frq(uint32_t frq);
 #endif /* BOARD_CORE_EXTENSION_PWM_H_ */

@@ -23,9 +23,8 @@ static void pwm_set_duty_for_adc_trig(uint32_t duty){
 void pwm_init_ex(void){
 
 	pwm_set_frq(1000);
-	PWM_DISABLE_OUTPUT;
-	PWM_STARTUP;
 	PWM_SET_DUTY(0);
+	PWM_DISABLE_OUTPUT;
 	LL_TIM_EnableCounter(PWM_TIMER);
 }
 void pwm_set_frq(uint32_t frq){
