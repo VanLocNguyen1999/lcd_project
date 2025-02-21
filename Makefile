@@ -69,7 +69,8 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c \
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_tim.c 
 
 C_SOURCES +=  \
-Core/Extension/lcd.c
+Core/Extension/lcd.c \
+Core/Extension/board.c 
 # ASM sources
 ASM_SOURCES =  \
 startup_stm32f103xb.s
