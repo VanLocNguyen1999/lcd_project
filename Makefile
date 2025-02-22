@@ -36,6 +36,13 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+board/Core/Src/system_stm32f1xx.c \
+board/Core/Src/sysmem.c \
+board/Core/Src/syscalls.c \
+board/Core/Src/gpio.c \
+board/Core/Src/adc.c \
+board/Core/Src/dma.c \
+board/Core/Src/tim.c \
 board/Core/Src/stm32f1xx_it.c \
 board/Core/Src/stm32f1xx_hal_msp.c \
 board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c \
@@ -51,18 +58,11 @@ board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c \
 board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c \
 board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c \
 board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c \
-board/Core/Src/system_stm32f1xx.c \
-board/Core/Src/sysmem.c \
-board/Core/Src/syscalls.c \
-board/Core/Src/gpio.c \
-board/Core/Src/adc.c \
-board/Core/Src/dma.c \
 board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_gpio.c \
 board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_dma.c \
 board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_rcc.c \
 board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_utils.c \
 board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_exti.c \
-board/Core/Src/tim.c \
 board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c \
 board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c \
 board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_tim.c 

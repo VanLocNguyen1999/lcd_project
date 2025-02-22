@@ -7,19 +7,6 @@
 
 #include "pwm.h"
 
-static void pwm_start(TIM_TypeDef*tim, uint32_t Channel){
-
-	LL_TIM_EnableCounter(tim);
-	LL_TIM_CC_EnableChannel(tim, Channel);
-	LL_TIM_EnableAllOutputs(tim);
-}
-
-static void pwm_set_duty_for_adc_trig(uint32_t duty){
-
-	PWM_TIMER->CCR4 = duty;
-	pwm_start(PWM_TIMER,ADC_TRIG_CHANNEL);
-}
-
 void pwm_init_ex(void){
 
 	pwm_set_frq(1000);
