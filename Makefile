@@ -70,6 +70,7 @@ board/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ll_tim.c
 C_SOURCES +=  \
 board/Core/Extension/lcd.c \
 board/Core/Extension/pwm.c \
+board/Core/Extension/adc_hardware.c \
 board/Core/Extension/board.c 
 C_SOURCES +=  \
 app/main.c 
